@@ -24,16 +24,66 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setEvents([
-        { id: 1, name: 'Football Match A', image: event1, description: 'Join us for an exciting match between Team A and Team B. Don’t miss the action!' },
-        { id: 2, name: 'Football Match B', image: event2, description: 'Team C takes on Team D in a high-stakes game. Come and support your favorite team!' },
-        { id: 3, name: 'Football Match C', image: event3, description: 'An exhilarating game between Team E and Team F. Great plays and incredible goals await!' },
-        { id: 4, name: 'Football Match D', image: event4, description: 'Watch as Team G faces Team H in a thrilling encounter. Expect intense action and drama!' },
-        { id: 5, name: 'Football Match E', image: event5, description: 'Cheer on Team I as they go head-to-head with Team J in this must-see match!' },
-        { id: 6, name: 'Football Match F', image: event6, description: 'Team K vs Team L. Witness a clash of titans and enjoy an unforgettable football experience!' },
-        { id: 7, name: 'Football Match G', image: event7, description: 'Don’t miss Team M vs Team N. An exciting game with skillful players and dramatic moments!' },
-        { id: 8, name: 'Football Match H', image: event8, description: 'Catch the match between Team O and Team P. A game full of action, goals, and unforgettable moments!' },
-        { id: 9, name: 'Football Match I', image: event9, description: 'Team Q takes on Team R. Experience the thrill of competitive football in this exciting match!' },
-        { id: 10, name: 'Football Match J', image: event10, description: 'The final showdown between Team S and Team T. A game you won’t want to miss!' },
+        {
+          id: 1,
+          name: 'Barcelona vs Real Madrid',
+          image: event1,
+          description: 'Watch the epic clash between Barcelona and Real Madrid. Expect intense rivalry and top-tier football!'
+        },
+        {
+          id: 2,
+          name: 'Liverpool vs Manchester United',
+          image: event2,
+          description: 'An exciting encounter between Liverpool and Manchester United. Don’t miss this high-stakes match!'
+        },
+        {
+          id: 3,
+          name: 'Bayern Munich vs Borussia Dortmund',
+          image: event3,
+          description: 'A thrilling game between Bayern Munich and Borussia Dortmund. A match full of action and drama!'
+        },
+        {
+          id: 4,
+          name: 'Paris Saint-Germain vs Chelsea',
+          image: event4,
+          description: 'Watch as Paris Saint-Germain takes on Chelsea in this exciting fixture. Expect quality football and dramatic moments!'
+        },
+        {
+          id: 5,
+          name: 'Juventus vs AC Milan',
+          image: event5,
+          description: 'The Italian giants Juventus and AC Milan face off in a highly anticipated match. Witness the clash of these football titans!'
+        },
+        {
+          id: 6,
+          name: 'Ajax vs PSV Eindhoven',
+          image: event6,
+          description: 'Ajax goes head-to-head with PSV Eindhoven in an exciting Dutch league match. A game filled with skillful plays and goals!'
+        },
+        {
+          id: 7,
+          name: 'Atletico Madrid vs Sevilla',
+          image: event7,
+          description: 'Don’t miss the action as Atletico Madrid takes on Sevilla. A match with passionate football and tactical battles!'
+        },
+        {
+          id: 8,
+          name: 'Inter Milan vs AS Roma',
+          image: event8,
+          description: 'Catch the intense match between Inter Milan and AS Roma. A clash featuring some of the best players in Serie A!'
+        },
+        {
+          id: 9,
+          name: 'Porto vs Benfica',
+          image: event9,
+          description: 'The Portuguese giants Porto and Benfica face each other in a thrilling encounter. A must-watch match for football fans!'
+        },
+        {
+          id: 10,
+          name: 'Galatasaray vs Fenerbahce',
+          image: event10,
+          description: 'The Istanbul derby between Galatasaray and Fenerbahce promises to be a spectacle. Expect high energy and fierce competition!'
+        },
       ]);
       setLoading(false);
     }, 1000);
