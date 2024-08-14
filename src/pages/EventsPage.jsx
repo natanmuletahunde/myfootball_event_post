@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// src/pages/EventsPage.jsx
 import React, { useState, useEffect } from 'react';
 import EventList from '../components/EventList';
 import FilterSidebar from '../components/FilterSidebar';
@@ -11,11 +10,67 @@ const EventsPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate fetching data
+    // Simulate fetching data with detailed descriptions
     setTimeout(() => {
       setEvents([
-        { id: 1, title: 'Football Match A', date: '2024-08-15', location: 'Stadium A', description: 'Description A' },
-        { id: 2, title: 'Football Match B', date: '2024-08-20', location: 'Stadium B', description: 'Description B' },
+        {
+          id: 1,
+          title: 'Football Match A',
+          date: '2024-08-15',
+          location: 'Stadium A',
+          description: `
+            The highly anticipated match between Team Alpha and Team Beta at Stadium A. 
+            Team Alpha, with its star striker in top form, is expected to dominate. 
+            Team Beta will rely on its solid defense and strategic play to secure a win. 
+            Expect a high-energy game with plenty of action and drama.
+          `,
+        },
+        {
+          id: 2,
+          title: 'Football Match B',
+          date: '2024-08-20',
+          location: 'Stadium B',
+          description: `
+            Stadium B will host the thrilling clash between Team Gamma and Team Delta. 
+            Team Gamma has been on a winning streak and is looking to extend its run. 
+            Team Delta, known for its quick counter-attacks, will aim to exploit any weaknesses. 
+            Fans are in for an exciting and unpredictable match.
+          `,
+        },
+        {
+          id: 3,
+          title: 'Football Match C',
+          date: '2024-08-25',
+          location: 'Stadium C',
+          description: `
+            The match at Stadium C features Team Epsilon against Team Zeta. 
+            Team Epsilon has had a mixed season, but their recent performances have shown promise. 
+            Team Zeta, with its strong midfield, will be looking to control the game. 
+            Expect a tactical battle with both teams trying to assert dominance.
+          `,
+        },
+        {
+          id: 4,
+          title: 'Football Match D',
+          date: '2024-09-01',
+          location: 'Stadium D',
+          description: `
+            Stadium D will be the venue for the exciting match between Team Eta and Team Theta. 
+            Team Eta, known for its attacking prowess, will be facing Team Theta, which is strong defensively. 
+            The game promises to be a clash of styles, with Team Eta's offense going up against Team Theta's defense.
+          `,
+        },
+        {
+          id: 5,
+          title: 'Football Match E',
+          date: '2024-09-10',
+          location: 'Stadium E',
+          description: `
+            The final match at Stadium E will showcase Team Iota versus Team Kappa. 
+            Team Iota has been in impressive form, while Team Kappa has struggled recently. 
+            This game is crucial for Team Kappa to turn their season around. Expect a fiercely contested match as both teams fight for victory.
+          `,
+        },
       ]);
       setLoading(false);
     }, 1000);
