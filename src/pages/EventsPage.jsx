@@ -4,13 +4,20 @@ import EventList from '../components/EventList';
 import FilterSidebar from '../components/FilterSidebar';
 import LoadingSpinner from '../components/LoadingSpinner';
 
+// Import images
+import event1 from '../assets/images/event1.jpg';
+import event2 from '../assets/images/event2.jpg';
+import event3 from '../assets/images/event3.jpg';
+import event4 from '../assets/images/event4.jpg';
+import event5 from '../assets/images/event5.jpg';
+
 const EventsPage = () => {
   const [events, setEvents] = useState([]);
   const [filters, setFilters] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate fetching data with detailed descriptions
+    // Simulate fetching data with detailed descriptions and images
     setTimeout(() => {
       setEvents([
         {
@@ -24,6 +31,7 @@ const EventsPage = () => {
             Team Beta will rely on its solid defense and strategic play to secure a win. 
             Expect a high-energy game with plenty of action and drama.
           `,
+          image: event1,
         },
         {
           id: 2,
@@ -36,6 +44,7 @@ const EventsPage = () => {
             Team Delta, known for its quick counter-attacks, will aim to exploit any weaknesses. 
             Fans are in for an exciting and unpredictable match.
           `,
+          image: event2,
         },
         {
           id: 3,
@@ -48,6 +57,7 @@ const EventsPage = () => {
             Team Zeta, with its strong midfield, will be looking to control the game. 
             Expect a tactical battle with both teams trying to assert dominance.
           `,
+          image: event3,
         },
         {
           id: 4,
@@ -59,6 +69,7 @@ const EventsPage = () => {
             Team Eta, known for its attacking prowess, will be facing Team Theta, which is strong defensively. 
             The game promises to be a clash of styles, with Team Eta's offense going up against Team Theta's defense.
           `,
+          image: event4,
         },
         {
           id: 5,
@@ -70,6 +81,7 @@ const EventsPage = () => {
             Team Iota has been in impressive form, while Team Kappa has struggled recently. 
             This game is crucial for Team Kappa to turn their season around. Expect a fiercely contested match as both teams fight for victory.
           `,
+          image: event5,
         },
       ]);
       setLoading(false);
