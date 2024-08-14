@@ -22,7 +22,6 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate fetching data
     setTimeout(() => {
       setEvents([
         { id: 1, name: 'Football Match A', image: event1, description: 'Join us for an exciting match between Team A and Team B. Don’t miss the action!' },

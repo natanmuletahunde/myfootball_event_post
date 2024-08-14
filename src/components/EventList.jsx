@@ -1,19 +1,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import EventCard from './EventCard';
 
 const EventList = ({ events }) => {
   return (
-    <div className="space-y-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
       {events.map(event => (
-        <div key={event.id} className="border border-gray-300 p-4 rounded-lg shadow-md">
-          <h2 className="text-xl font-bold">{event.title}</h2>
-          <p className="text-gray-600">Date: {event.date}</p>
-          <p className="text-gray-600">Location: {event.location}</p>
-          <div className="mt-2 text-gray-800">
-            <p>{event.description}</p>
-          </div>
-        </div>
+        <EventCard key={event.id} event={event} />
       ))}
     </div>
   );
